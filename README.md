@@ -2,7 +2,7 @@
 
 ## Working Title
 
-### (Undecided
+### (Undecided)
 
 ## Art Style
 
