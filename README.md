@@ -12,7 +12,10 @@
 ## Game Ideas
 
 * The More You Have, The Worse It Is
-* 
+* More Currency, Slower Movement
+* Shoot Currency
+* Progressing need Currency
+* "Randomized Enemies"
   
 ## Development Tools
 
