@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontal;
     float vertical;
-    float moveLimiter;
+    float moveLimiter = 0.7f;
 
     public float speed;
 
@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
-        moveLimiter = speed * 0.7f;
     }
 
     // Update is called once per frame
