@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 8823293705109886561}
   - component: {fileID: 8823293705109886560}
   - component: {fileID: 8823293705109886567}
-  - component: {fileID: 8823293705109886566}
   - component: {fileID: 8823293705109886562}
+  - component: {fileID: 331847778}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,18 +99,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
---- !u!114 &8823293705109886566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8823293705109886565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f53dccc488eeb1645966c06a9b16ec83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &8823293705109886562
 Rigidbody2D:
   serializedVersion: 4
@@ -132,6 +120,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &331847778
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8823293705109886565}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &8823293705671603875
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8823293706453746083}
   - component: {fileID: 8823293706453746076}
+  - component: {fileID: 1596588321}
   m_Layer: 0
   m_Name: PlayerAim
   m_TagString: Untagged
@@ -258,3 +263,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3651499f5a8bf584892af70d4ee3d61e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1596588321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8823293706453746082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11dfe563a06e6d44e8bea96dae34583a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firerate: 0.3
+  bulletspeed: 800
+  bullet: {fileID: 4615736329480801360, guid: a9b00729821351943afd3203a467d703, type: 3}
+  time: 0

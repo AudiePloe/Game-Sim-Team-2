@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e005237328e974bbb8de72da6f8a61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerTransform: {fileID: 8823293705109886561, guid: d76d239aae1b9c644be692a26fb9a714, type: 3}
+  PlayerTransform: {fileID: 0}
   MovementSpeed: 2
   EnemyRigidBody: {fileID: 7329490750201967006}
 --- !u!114 &7329490750201967003

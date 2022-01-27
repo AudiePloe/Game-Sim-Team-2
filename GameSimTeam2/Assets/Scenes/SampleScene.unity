@@ -167,32 +167,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &331847772 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8823293705109886565, guid: d76d239aae1b9c644be692a26fb9a714, type: 3}
-  m_PrefabInstance: {fileID: 8823293705297821884}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &331847773 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8823293705109886561, guid: d76d239aae1b9c644be692a26fb9a714, type: 3}
   m_PrefabInstance: {fileID: 8823293705297821884}
   m_PrefabAsset: {fileID: 0}
---- !u!58 &331847778
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 331847772}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,32 +373,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1596588318 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8823293706453746082, guid: d76d239aae1b9c644be692a26fb9a714, type: 3}
-  m_PrefabInstance: {fileID: 8823293705297821884}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1596588321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596588318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11dfe563a06e6d44e8bea96dae34583a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firerate: 0.3
-  bulletspeed: 800
-  bullet: {fileID: 4615736329480801360, guid: a9b00729821351943afd3203a467d703, type: 3}
-  time: 0
---- !u!50 &1901051138 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 7329490750201967006, guid: 02568f737e137e1438d5da2f8e198b05, type: 3}
-  m_PrefabInstance: {fileID: 7329490752092966044}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7329490752092966044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -427,10 +380,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -182090315400794517, guid: 02568f737e137e1438d5da2f8e198b05, type: 3}
-      propertyPath: EnemyRigidBody
-      value: 
-      objectReference: {fileID: 1901051138}
     - target: {fileID: 7329490750201967001, guid: 02568f737e137e1438d5da2f8e198b05, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -538,10 +487,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8823293705109886565, guid: d76d239aae1b9c644be692a26fb9a714, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8823293705109886565, guid: d76d239aae1b9c644be692a26fb9a714, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
