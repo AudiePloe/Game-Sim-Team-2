@@ -41,6 +41,15 @@ TagManager:
   - name: BG
     uniqueID: 2437287395
     locked: 0
+  - name: floor
+    uniqueID: 2573767749
+    locked: 0
+  - name: doors
+    uniqueID: 777006563
+    locked: 0
+  - name: arch
+    uniqueID: 2817375051
+    locked: 0
   - name: Ground
     uniqueID: 3497240669
     locked: 0
