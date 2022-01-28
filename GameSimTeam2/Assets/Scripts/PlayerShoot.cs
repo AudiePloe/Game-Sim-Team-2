@@ -9,7 +9,9 @@ public class PlayerShoot : MonoBehaviour
 
     public Rigidbody2D bullet;
 
-    public float time;
+    float time;
+
+    public Player playerM;
 
     void Start()
     {
@@ -25,6 +27,8 @@ public class PlayerShoot : MonoBehaviour
         {
             Rigidbody2D bulletclone = (Rigidbody2D)Instantiate(bullet, transform.position, transform.rotation);
             bulletclone.GetComponent<Rigidbody2D>().AddForce(transform.right * bulletspeed);
+
+            playerM.Money -= 1;
             time = 0;
         }
         
