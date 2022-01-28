@@ -15,4 +15,14 @@ public class Bullet : MonoBehaviour
     {
         Destroy(gameObject, 5);
     }
+
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.tag != "Player")
+        {
+            Destroy(gameObject, 0.05f);
+        }
+    }
+
 }
