@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:GameSimTeam2/Assets/Sprites/tilemap.meta
+guid: ff645d57e9535614abf443f7495944c8
+=======
 guid: 5a2387c864c169c4bacfcc7e6ebd54eb
+>>>>>>> main:GameSimTeam2/Assets/Sprites/Back.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

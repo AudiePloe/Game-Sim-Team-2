@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:GameSimTeam2/Assets/Sprites/Materials.meta
+guid: 749d2b227f0fdf641b8bdc70caf300c0
+=======
 guid: 84fa5dfde61838d4a9703b52cbc22330
+>>>>>>> main:GameSimTeam2/Assets/Audio.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
