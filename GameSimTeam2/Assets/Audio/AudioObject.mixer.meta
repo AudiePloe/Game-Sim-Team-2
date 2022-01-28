@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:GameSimTeam2/Assets/Sprites/Materials/doors.mat.meta
+guid: 7e80e2f41534718468119c7c495fc8ed
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+=======
 guid: 845c735f45278974a9691655e28a9d24
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 24100000
+>>>>>>> main:GameSimTeam2/Assets/Audio/AudioObject.mixer.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 
