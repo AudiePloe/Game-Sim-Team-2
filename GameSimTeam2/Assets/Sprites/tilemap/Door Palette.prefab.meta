@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:GameSimTeam2/Assets/Sprites/tilemap/Door Palette.prefab.meta
 guid: 29c42e5be6f1fb04b94bffed580fda39
+=======
+guid: a9b00729821351943afd3203a467d703
+>>>>>>> main:GameSimTeam2/Assets/Prefabs/Bullet.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
