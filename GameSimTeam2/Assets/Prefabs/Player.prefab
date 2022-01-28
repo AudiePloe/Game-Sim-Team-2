@@ -108,7 +108,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 93a1195b58931ea42982876666366bf2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a08b6d67d6511a742b1fb2ca1350af6b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -204,6 +204,7 @@ MonoBehaviour:
   Health: 10
   moneyText: {fileID: 0}
   healthText: {fileID: 0}
+  coin: {fileID: 0}
 --- !u!1 &8823293706453746082
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,4 +264,5 @@ MonoBehaviour:
   firerate: 0.3
   bulletspeed: 800
   bullet: {fileID: 4615736329480801360, guid: a611bc012107d404ca513137c77deb1d, type: 3}
+  Throw: {fileID: 0}
   playerM: {fileID: 700721647}

@@ -15,6 +15,9 @@ public class Player : MonoBehaviour
     public Text moneyText;
     public Text healthText;
 
+    public AudioSource coin;
+
+
     float time = 10;
     void Start()
     {
@@ -44,6 +47,7 @@ public class Player : MonoBehaviour
         if(col.gameObject.tag == "Coin")
         {
             Money += 1;
+            coin.Play();
             Destroy(col.gameObject);
         }
 

@@ -14,6 +14,8 @@ public class EnemyMovement : MonoBehaviour
     float AngleDeg;
     float AngleRad;
 
+    public SpriteRenderer SP;
+
     void Start()
     {
         
@@ -36,6 +38,15 @@ public class EnemyMovement : MonoBehaviour
 
         }
 
+
+        if(transform.rotation.z < 0)
+        {
+            SP.flipY = true;
+        }
+        else
+        {
+            SP.flipY = false;
+        }
 
 
     }

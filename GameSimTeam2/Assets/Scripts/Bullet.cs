@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public GameObject Coin;
+
+
     void Start()
     {
         
@@ -19,10 +22,19 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag != "Player")
+
+        if (col.gameObject.tag == "Enemy" || col.gameObject.tag == "Door")
         {
             Destroy(gameObject, 0.05f);
         }
+        else if (col.gameObject.tag != "Player")
+        {
+            Instantiate(Coin, transform.position, transform.rotation);
+
+            Destroy(gameObject);
+        }
+
+
     }
 
 }

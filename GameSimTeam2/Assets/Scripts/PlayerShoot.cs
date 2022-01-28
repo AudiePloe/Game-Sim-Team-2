@@ -8,6 +8,7 @@ public class PlayerShoot : MonoBehaviour
     public float bulletspeed;
 
     public Rigidbody2D bullet;
+    public AudioSource Throw;
 
     float time;
 
@@ -23,11 +24,12 @@ public class PlayerShoot : MonoBehaviour
     {
         time += Time.deltaTime;
 
-        if (Input.GetMouseButton(0) && time >= firerate)
+        if (Input.GetMouseButton(0) && time >= firerate && playerM.Money >= 1)
         {
             Rigidbody2D bulletclone = (Rigidbody2D)Instantiate(bullet, transform.position, transform.rotation);
             bulletclone.GetComponent<Rigidbody2D>().AddForce(transform.right * bulletspeed);
 
+            Throw.Play();
             playerM.Money -= 1;
             time = 0;
         }

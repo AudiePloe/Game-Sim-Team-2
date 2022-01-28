@@ -42,6 +42,7 @@ public class DoorScript : MonoBehaviour
         if(col.gameObject.tag == "Bullet")
         {
             remainingCost -= 1;
+            Destroy(col.gameObject);
         }
     }
 
