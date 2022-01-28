@@ -7,6 +7,8 @@ public class EnemyHealth : MonoBehaviour
     public int Health = 1;
 
     public Rigidbody2D EnemyRigidBody;
+    public GameObject Coin;
+    public int coinDrop = 1;
 
     float HitTime = 10f;
 
@@ -24,6 +26,12 @@ public class EnemyHealth : MonoBehaviour
 
         if (Health <= 0)
         {
+            for(int i = 0; i < coinDrop; i++)
+            {
+                Instantiate(Coin, transform.position, transform.rotation);
+                
+            }
+
             Destroy(gameObject);
         }
     }

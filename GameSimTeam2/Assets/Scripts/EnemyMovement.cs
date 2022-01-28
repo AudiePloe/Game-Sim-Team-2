@@ -22,17 +22,21 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Vector2.Distance(PlayerTransform.position, this.transform.position) <= 10)
+        {
+            PlayerVector = PlayerTransform.position;
 
-        PlayerVector = PlayerTransform.position;
+            AngleRad = Mathf.Atan2(PlayerVector.y - this.transform.position.y, PlayerVector.x - this.transform.position.x);
 
-        AngleRad = Mathf.Atan2(PlayerVector.y - this.transform.position.y, PlayerVector.x - this.transform.position.x);
+            AngleDeg = (180 / Mathf.PI) * AngleRad;
 
-        AngleDeg = (180 / Mathf.PI) * AngleRad;
+            this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
 
-        this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
+            EnemyRigidBody.AddForce(transform.right * MovementSpeed);
 
-        EnemyRigidBody.AddForce(transform.right * MovementSpeed);
-        
+        }
+
+
 
     }
 }
