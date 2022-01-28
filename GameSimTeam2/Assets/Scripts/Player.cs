@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public LoadScene LS;
+
+
     public int Money = 20;
     public int Health = 10;
 
@@ -25,6 +28,13 @@ public class Player : MonoBehaviour
 
         moneyText.text = "Money : " + Money;
         healthText.text = "Health : " + Health;
+
+
+        if(Health <= 0)
+        {
+            LS.Loadscene("LoseScene");
+        }
+
 
     }
 
