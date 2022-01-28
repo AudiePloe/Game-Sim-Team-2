@@ -9,6 +9,10 @@ public class PlayerShoot : MonoBehaviour
 
     public Rigidbody2D bullet;
 
+    float time;
+
+    public Player playerM;
+
     void Start()
     {
         
@@ -17,10 +21,17 @@ public class PlayerShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        time += Time.deltaTime;
+
+        if (Input.GetMouseButton(0) && time >= firerate)
         {
-            Rigidbody2D bulletclone = (Rigidbody2D) Instantiate(bullet, transform.position, transform.rotation);
-            bulletclone.velocity = Vector2.up * bulletspeed;
+            Rigidbody2D bulletclone = (Rigidbody2D)Instantiate(bullet, transform.position, transform.rotation);
+            bulletclone.GetComponent<Rigidbody2D>().AddForce(transform.right * bulletspeed);
+
+            playerM.Money -= 1;
+            time = 0;
         }
+        
+
     }
 }

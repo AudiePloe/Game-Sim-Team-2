@@ -11,18 +11,24 @@ public class PlayerMovement : MonoBehaviour
     float moveLimiter = 0.7f;
 
     public float speed;
+    public float speedScale;
 
+    public Player playerScript;
 
-
+    float baseSpeed;
     
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
+        baseSpeed = speed;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        speed = baseSpeed - (float)(playerScript.Money * speedScale);
+
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 
