@@ -57,3 +57,6 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+GameSimTeam2/Library/PackageCache/com.unity.2d.animation@5.0.9/Editor.meta
+*.log
+*.asset

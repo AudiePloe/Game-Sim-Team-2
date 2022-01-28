@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:GameSimTeam2/Assets/Sprites/EnemySprites 1.meta
 guid: 2c8cb0bb82fe28c4baa90b0b0b9764b1
+=======
+guid: 5ec4d3bae3bea11409d143699d74dd20
+>>>>>>> main:GameSimTeam2/Assets/Sprites/Sides.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
